@@ -1,0 +1,232 @@
+<!-- First line is where we declare the document type.
+      This is a HTML 5 doctype.  -->
+<!-- If you want to see documentation for the emmet plugin,
+      go to docd.emmet.io/cheat sheet for more information -->
+ <!DOCTYPE html>
+
+ <!-- The next line is an html tag, telling the browser everything
+       between these tags is html code.  -->
+ <html>
+<!-- Head is the part of the html file that holds the information
+      about the webpage and tells the browser how it should handle the page -->
+   <head>
+     <!-- Quite a few different meta elements. The meta elements give extra
+           meta data or associated data to html document. Telling the
+           browser that all the text in our document is encoded using
+           the UTF-8 encoding system. Different languages use different
+           symbols which means theres a variety of different types of encoding.
+           UTF-8 should be the standard you should use because it includes
+           all the international symbols. Unicode also includes emojis (: .
+           When searching a search engine such as google, you can use meta
+           tags for descriptions so that others searching for a related topic
+           are able to locate and pinpoint their search using your
+           descriptions.  -->
+     <meta charset="utf-8">
+     <!-- One example of information on a webpage could be a title. This
+           title tag is one example -->
+     <title>Oscars Personal Site</title>
+   </head>
+
+
+   <!-- Body tag holds the actual content of the webpage. -->
+   <body>
+
+    <!-- This table contains the image and the other information from the first
+         portion of the website and places it in a table. The first content,
+         which is the image, is placed in a table row in the first table
+         cell. The second conent, includes the Name and other information that
+         the user finds significant and places it in the same row in the second
+         table cell.
+         -->
+    <!-- The Cellspacing attribute defines the size of the space between two
+         cells in a percentage value or pixels.    -->
+    <table cellspacing = 20>
+      <tr>
+        <!-- The image tag is self closing and embeds (places) an image into your
+              document. There additional attributes such as "src"and "alt" that
+              can be used wit this tag. "src" allows you to place the url of
+              the image you want to be show in the document. You can also put
+              the name of the image that is saved in the same directory as your
+              html file. "alt" attribute allows you to describe the image. This
+              is helpful for browsers in helping others narrow down their search
+              by using certain keywords.-->
+        <td><img src="Oscars Profile Picture Circle.png" alt="Oscars Profile Picture"></td>
+
+
+        <td>     <!-- This is a level 1 HTML header containing text. in our case, the
+                   text is my name. -->
+             <h1> Oscar Alvarez</h1>
+             <!-- P tag formats text into a paragraph -->
+             <!-- The anchor element and its href attribute create hyperlinks to web
+                  pages, files, email addresses locations in the same page, or anything
+                  else a url can address.-->
+             <p><em><strong>University of Washington</Strong> Alumni</em> </p>
+             <p><strong>EIT</strong> (ENGINEER-IN-TRAINING)</p>
+
+             <!-- Every time you use the p header tag it will create a new paragraph.-->
+             <p>Hello my name is Oscar Alvarez. I am an Alumni from the University
+               Washington Tacoma. Currently, I am working as an electrical engineer at
+               BCE Engineers. BCE is a MEP
+               consulting firm located in Fife, Washington.  </p>
+
+
+            <!-- <img src="LittleNaruto.PNG" height = 200 width = 200 alt=""> <br> -->
+            <a href="CONTACT INFO.html">CONTACT INFORMATION</a> </td>
+      </tr>
+
+    </table>
+
+    <!-- Horizontal line Across the page -->
+    <hr>
+
+    <!-- Level 3 Header -->
+    <h3>EDUCATION</h3>
+
+
+      <!-- This header tag is called an unordered list or a bulleted list.  -->
+      <ul>
+        <li><a href="https://fhs.fifeschools.com/">Fife High School</a></li>
+        <ul>
+          <li>2013 - 2014</li>
+        </ul>
+        <li><a href="https://www.pierce.ctc.edu/">Pierce College</a></li>
+        <ul>
+          <li>2014-2016</li>
+          <li>Associate of Arts</li>
+        </ul>
+        <li><a href="https://www.stmartin.edu/">Saint Martins University</a></li>
+        <ul>
+          <li>2016</li>
+        </ul>
+        <li><a href="https://www.tacoma.uw.edu/">University of Washington Tacoma</a></li>
+        <ul>
+          <li>2017-2019</li>
+          <li>Bachelor's of Science in Electrical Engineering</li>
+        </ul>
+      </ul>
+
+    <hr>
+
+    <h3>WORK EXPERIENCE</h3>
+
+    <!-- The table element represents tabular data. This includes information
+        presented in a two-dimensional table comprised of rows and columns
+        of cells containing data.       -->
+    <table cellspacing = "10">
+      <!--Table header element. -->
+      <thead>
+        <!-- Table Header Cell. Bolds Text in cell indicating it is a header.
+        You dont have to use the table header cell (th) element in the the
+        table head element. This is only if you want to seperate functionality
+        later using CSS for different functions.  -->
+        <th>Date</th>
+        <th>Work</th>
+      </thead>
+
+      <!--Table body element. -->
+      <tbody>
+        <!-- 1st Table Row -->
+        <tr>
+          <!-- Table Cell. Every table cell element represents a cell in the row.
+          -->
+          <!-- 1st Column -->
+          <td>2014-2015</td>
+          <!--- 2nd Column -->
+          <td> Mcdonalds</td>
+
+        </tr>
+
+        <!-- 2nd Table Row -->
+        <tr>
+          <td>2019-Present</td>
+          <td> BCE Engineers Inc</td>
+        </tr>
+
+      </tbody>
+
+      <!--Table footer element. -->
+      <tfoot>
+
+      </tfoot>
+
+    </table>
+
+    <hr>
+
+    <h3>SKILLS</h3>
+
+<!-- HTML Table Challenge
+    This is considered a nested table. By taking an already made table that
+    contains two rows with four total cells, we are able to take that and place
+    a table in a cell. This is what nesting is. You take the table that exists
+    and place it in a singular cell, giving the impressions that you can fit
+    and structure four items in a column, but really you're just placing all
+    the data in one area (cell). This is usually not done with html tables
+    because the styling is usually left to CSS. However, this gives a better
+    understanding of how to utilize tables in html. -->
+<!--  <table border = 1>
+    <tr>
+      <td>  <table>
+          <tr>
+            <td>AutoCAD</td>
+            <td>⭐⭐⭐</td>
+          </tr>
+
+          <tr>
+            <td>Revit</td>
+            <td>⭐⭐⭐⭐</td>
+          </tr>
+
+        </table></td>
+      <td>  <table>
+          <tr>
+            <td>AutoCAD</td>
+            <td>⭐⭐⭐</td>
+          </tr>
+
+          <tr>
+            <td>Revit</td>
+            <td>⭐⭐⭐⭐</td>
+          </tr>
+
+        </table></td>
+    </tr>
+  </table> -->
+
+  <table cellspacing = 10>
+     <tr>
+       <td>AutoCAD</td>
+       <td>⭐⭐⭐</td>
+       <td>Word</td>
+       <td>⭐⭐⭐</td>
+       <td>Arduino</td>
+       <td>⭐⭐</td>
+
+     </tr>
+
+     <tr>
+       <td>Revit</td>
+       <td>⭐⭐⭐⭐</td>
+       <td>Excel</td>
+       <td>⭐⭐⭐</td>
+       <td>HTML</td>
+       <td>⭐</td>
+
+     </tr>
+
+
+
+   </table></td>
+
+
+
+    <!-- Horizontal line -->
+    <hr>
+
+    <!-- The hobbies section of the webpage was moved to another file to link
+         the content that was in the original section. Using the anchor element,
+         we can link the HOBBIES header to a seperate html file.
+    -->
+    <h3><a href="HOBBIES.html">HOBBIES</a></h3>
+
+   </body>

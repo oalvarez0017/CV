@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title>CONTACT INFORMATION</title>
+  </head>
+
+
+  <body>
+    <h3>CONTACT INFORMATION</h3>
+    <ul>
+      <li>Email:<a href="oscaralvarez0017@gmail.com">oscaralvarez0017@gmail.com</a> </li>
+      <li>Facebook: <a href="https://www.facebook.com/oscar.alvarez.397">https://www.facebook.com/oscar.alvarez.397</a></li>
+      <li>LinkedIn: <a href="https://www.linkedin.com/in/oscar-alvarez-7b0777172/">https://www.linkedin.com/in/oscar-alvarez-7b0777172/</a> </li>
+    </ul>
+
+<hr>
+  <!-- Creating a form element. This represnts a document section containing
+      interactive controls for submitting information. Unfortunately, without
+      knowing much about CS or Javascript we can't know the full functionality
+      of the action and method attributes. The "action" attribute specifies
+      where to send the form data when a form is submitted.   -->
+
+  <!-- Currently the submit button in our form takes us back to our index.html
+      file. This is because action is equal to "index.html". The method
+      atrribute specifies how to send form-data.The form data can be sent as
+      URL variables (with method = "get") or as HTTP post transaction (with
+      method = "post") The post in the "method" attribute will transfer all the
+      users input and place it into the email client.  -->
+
+      <!-- The same way we used utf-8 to tell our browser that our information
+      will be encoded using this system, setting the "enctype" attribute equal
+      to "text/plain", tells us that the data in our form should be encoded in
+      plain text.
+       -->
+  <form action="mailto:oscaralvarez0017@gmail.com" method="post" enctype="text/plain">
+    <!-- Label is the text that will be visible for the user. -->
+    <label for="">Your Name:</label>
+    <!-- Input with type = "text" gives the option for the user to type any
+        desired text into a text box. You can define the input type to
+        use a variety of interactive controls for the user.-->
+    <input type="text" name="yourName" value=""><br>
+    <label for="">Your Email:</label>
+    <input type="email" name="yourEmail" value=""> <br>
+    <label for="">Your Message:</label><br>
+    <textarea name="yourMessage" rows="10" cols="30"></textarea> <br>
+    <input type="submit" name="" value="submit">
+
+
+  </form>
+
+  </body>
+</html>
